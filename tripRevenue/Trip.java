@@ -1,3 +1,9 @@
+/**
+ * @author Tao Chen
+ *
+ * Trip class
+ */
+
 package tripRevenue;
 
 import java.util.ArrayList;

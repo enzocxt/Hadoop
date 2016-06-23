@@ -1,3 +1,13 @@
+/**
+ * @author Tao Chen
+ *
+ * This class computes the trips of taxis from taxi trip coordinates.
+ * TripMapper maps valuable trip coordinates.
+ * TripReducer reduces trip coordinates to taxi trips.
+ * RevenueMapper maps trips to revenues.
+ * RevenueReducer sums trip revenues by day.
+ */
+
 package tripRevenue;
 
 import org.apache.hadoop.fs.Path;

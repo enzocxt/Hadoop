@@ -1,3 +1,10 @@
+/**
+ * @author Tao Chen
+ *
+ * This class TripLength calculates the trip lengths
+ * and trip length distribution
+ */
+
 package tripDist;
 
 import java.io.IOException;

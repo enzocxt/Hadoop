@@ -1,3 +1,10 @@
+/**
+ * @author Tao Chen
+ *
+ * TaxiTrips class for one taxi.
+ * The trips attribute is a list of Trip object belonging to this taxi.
+ */
+
 package tripRevenue;
 
 import org.apache.hadoop.io.WritableComparable;
