@@ -4,6 +4,7 @@ This project works on GPS tracks of taxis in [San Francisco][1]. Several dataset
 - 2010\_03.segments: Follows the same specification as the previous dataset, but only contains the segments started or finished in March 2010. The dataset still contains about 19 million segments and weighs 1.2GiB.
 - 2010\_03.trips: Contains trips constructed from the segments in the previous dataset. Each trip is simply represented by its two end points (i.e. there is no intermediary position).
 - Taxi\_706.segments: This dataset contains 19237 segments from taxi number 706, exclusively. This dataset is useful for debugging. 
+
 The datasets are provided (almost) as such: they are not sorted, and they contain errors and misformatted records. Dealing with this type of data is part of the project. 
 #### Trip length distribution
 First, we are interested in computing a simple statistic: the distribution of trip lengths. We will compute this distribution for the trips in the 2010\_03.trips preprocessed dataset. 
