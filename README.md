@@ -1,10 +1,10 @@
 ### Hadoop
-This project works on GPS tracks of taxis in [San Francisco][1]. Several datasets need to be dealt with, which are briefly introduced in following. More details about their format are given later, in the corresponding sections. The [datasets][2] are available online.
+This project works on GPS tracks of taxis in [San Francisco][1]. Several datasets need to be dealt with, which are briefly introduced in following. More details about their format are given later, in the corresponding sections. The [datasets][2] are available online. 
 - all.segments: The complete GPS tracks (including intermediary points) from May 2008 to January 2011. Each record is a segment with two end points (start position, end position), two time stamps (start date, end date) and two taxi states (empty/full) for the beginning and for the end of the segment. Consecutive segments can be concatenated to form complete trips. The dataset contains about 306 million segments and weighs 28GiB.
 - 2010\_03.segments: Follows the same specification as the previous dataset, but only contains the segments started or finished in March 2010. The dataset still contains about 19 million segments and weighs 1.2GiB.
 - 2010\_03.trips: Contains trips constructed from the segments in the previous dataset. Each trip is simply represented by its two end points (i.e. there is no intermediary position).
-- Taxi\_706.segments: This dataset contains 19237 segments from taxi number 706, exclusively. This dataset is useful for debugging.
-The datasets are provided (almost) as such: they are not sorted, and they contain errors and misformatted records. Dealing with this type of data is part of the project.
+- Taxi\_706.segments: This dataset contains 19237 segments from taxi number 706, exclusively. This dataset is useful for debugging. 
+The datasets are provided (almost) as such: they are not sorted, and they contain errors and misformatted records. Dealing with this type of data is part of the project. 
 #### Trip length distribution
 First, we are interested in computing a simple statistic: the distribution of trip lengths. We will compute this distribution for the trips in the 2010\_03.trips preprocessed dataset. 
 For this exercise only, we will assume that the trip distance is the distance between the two end points of the trip. This information is easy to compute from 2010 03.trips, as it contains descriptions of the trips without the intermediary segments. In this dataset, each line has the following format (represented here on two lines): 
